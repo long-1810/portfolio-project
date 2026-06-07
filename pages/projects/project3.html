@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio | NV3</title>
+
+		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="/css/pages/mission.css" />
+    <link rel="stylesheet" href="/css/pages/mission3.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="/index.html">
+					<img
+						src="/assets/logo/teacup.svg"
+						alt="logo"
+						class="logo"
+					/>
+				</a>
+
+				<ul class="nav-links">
+					<li><a href="/index.html">Giới thiệu</a></li>
+					<li>
+						<a href="/pages/projects.html" class="active">Dự án</a>
+					</li>
+					<li><a href="/pages/summary.html">Tổng kết</a></li>
+				</ul>
+
+				<div class="nav-toggles">
+					<button
+						class="toggle-btn theme-toggle"
+						id="theme-toggle-btn"
+						aria-label="Toggle Dark/Light Mode"
+					>
+						<img
+							src="#"
+							alt="Theme Icon"
+							class="icon"
+							id="theme-icon-img"
+						/>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main class="md-document">
+			<h1 class="md-h1">
+				NV3 - Viết Prompt hiệu quả cho các tác vụ học tập
+			</h1>
+
+			<section class="md-section">
+				<h2 class="md-h2">I. Giới thiệu</h2>
+				<p class="md-p-content">
+					Sự phát triển của các mô hình ngôn ngữ lớn (LLMs) như
+					ChatGPT đã mở ra cơ hội mới trong học tập. Tuy nhiên, hiệu
+					quả sử dụng phụ thuộc lớn vào cách người dùng đặt prompt.
+					Báo cáo này nhằm khám phá cách thiết kế prompt ở các mức độ
+					khác nhau và đánh giá ảnh hưởng của chúng đến chất lượng đầu
+					ra.
+				</p>
+			</section>
+
+			<section class="md-section">
+				<h2 class="md-h2">II. Lựa chọn và phân tích tác vụ học tập</h2>
+
+				<div class="md-table-container">
+					<table class="md-table">
+						<thead>
+							<tr>
+								<th>Tiêu chí</th>
+								<th>Tóm tắt tài liệu học thuật</th>
+								<th>Giải thích khái niệm phức tạp</th>
+								<th>Tạo câu hỏi ôn tập</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Mục tiêu</th>
+
+								<td>
+									<p class="md-p-content">
+										- Trích xuất và trình bày các luận điểm,
+										kết quả nghiên cứu và kết luận quan
+										trọng nhất của tài liệu.
+									</p>
+									<p class="md-p-content">
+										- Giảm đáng kể độ dài văn bản nhưng vẫn
+										bảo toàn ý nghĩa cốt lõi và mối quan hệ
+										logic giữa các phần.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Chuyển đổi một khái niệm chuyên môn
+										thành nội dung dễ hiểu đối với người học
+										chưa có nền tảng kiến thức.
+									</p>
+									<p class="md-p-content">
+										- Giúp người học hiểu được bản chất, ứng
+										dụng và mối liên hệ của khái niệm với
+										thực tiễn.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Hỗ trợ củng cố kiến thức và đánh giá
+										mức độ hiểu bài của người học.
+									</p>
+									<p class="md-p-content">
+										- Tạo ra hệ thống câu hỏi bao phủ các
+										nội dung quan trọng của chủ đề.
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Thách thức</th>
+
+								<td>
+									<p class="md-p-content">
+										- Phân biệt được thông tin cốt lõi với
+										các chi tiết bổ trợ hoặc ví dụ minh họa.
+									</p>
+									<p class="md-p-content">
+										- Tránh bỏ sót kết quả nghiên cứu quan
+										trọng hoặc làm sai lệch nội dung gốc.
+									</p>
+									<p class="md-p-content">
+										- Duy trì tính khách quan, không đưa
+										thêm suy luận ngoài tài liệu.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Cân bằng giữa tính chính xác học thuật
+										và tính dễ hiểu.
+									</p>
+									<p class="md-p-content">
+										- Xử lý các thuật ngữ chuyên ngành mà
+										không làm mất ý nghĩa khoa học.
+									</p>
+									<p class="md-p-content">
+										- Tránh giải thích quá đơn giản dẫn đến
+										hiểu sai bản chất khái niệm.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Đảm bảo câu hỏi đánh giá được nhiều
+										mức độ nhận thức khác nhau thay vì chỉ
+										kiểm tra ghi nhớ.
+									</p>
+									<p class="md-p-content">
+										- Tránh tạo câu hỏi quá dễ, quá khó hoặc
+										trùng lặp nội dung.
+									</p>
+									<p class="md-p-content">
+										- Bảo đảm đáp án chính xác và phản ánh
+										đúng nội dung học tập.
+									</p>
+								</td>
+							</tr>
+
+							<tr>
+								<th>Yêu cầu đối với prompt</th>
+
+								<td>
+									<p class="md-p-content">
+										- Chỉ rõ loại tài liệu cần tóm tắt (bài
+										báo, chương sách, báo cáo nghiên
+										cứu...).
+									</p>
+									<p class="md-p-content">
+										- Xác định độ dài đầu ra mong muốn (số
+										từ hoặc số ý chính).
+									</p>
+									<p class="md-p-content">
+										- Yêu cầu cấu trúc cụ thể như mục tiêu
+										nghiên cứu, phương pháp, kết quả và kết
+										luận.
+									</p>
+									<p class="md-p-content">
+										- Quy định mức độ chi tiết của bản tóm
+										tắt.
+									</p>
+									<p class="md-p-content">
+										- Không bổ sung hoặc suy diễn thông tin
+										ngoài văn bản nguồn.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Xác định rõ đối tượng người học (người
+										mới bắt đầu, sinh viên năm nhất...).
+									</p>
+									<p class="md-p-content">
+										- Yêu cầu sử dụng ngôn ngữ đơn giản, dễ
+										tiếp cận.
+									</p>
+									<p class="md-p-content">
+										- Hạn chế hoặc giải thích rõ các thuật
+										ngữ chuyên môn.
+									</p>
+									<p class="md-p-content">
+										- Cung cấp ví dụ thực tế, phép so sánh
+										hoặc ẩn dụ phù hợp.
+									</p>
+									<p class="md-p-content">
+										- Trình bày theo trình tự từ khái quát
+										đến chi tiết và có phần tóm tắt cuối
+										cùng.
+									</p>
+								</td>
+
+								<td>
+									<p class="md-p-content">
+										- Chỉ rõ chủ đề và phạm vi kiến thức cần
+										ôn tập.
+									</p>
+									<p class="md-p-content">
+										- Xác định đối tượng người học và trình
+										độ kiến thức.
+									</p>
+									<p class="md-p-content">
+										- Quy định số lượng câu hỏi và loại câu
+										hỏi (trắc nghiệm, tự luận, tình
+										huống...).
+									</p>
+									<p class="md-p-content">
+										- Phân bố câu hỏi theo các mức độ nhận
+										thức: nhớ, hiểu và vận dụng.
+									</p>
+									<p class="md-p-content">
+										- Cung cấp đáp án, giải thích đáp án và
+										mức độ khó cho từng câu hỏi.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="md-section">
+	<h2 class="md-h2">III. Xây dựng các phiên bản và thử nghiệm Prompt</h2>
+
+	<h3 class="md-h3">1. Tóm tắt tài liệu</h3>
+
+	<h4 class="md-h4">Prompt cơ bản</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Tóm tắt đoạn văn sau:
+Throughout the history of mass communication, there has been a continuing interest in the relationships between mass media and cultural identities. This has been driven by the general, underlying assumption that different media variously form, influence,orshapecollective identities as such. How mass media might, at various times, specifically affect the formation and maintenance of national cultures and identities has occupied center stage in this continuing discussion. National identities normally embrace a range of cultural identities based on ethnic, religious, and linguistic diversity. Nationalists, however, often wish to portray national identity as based in a single culture. Nation-states remain, for the most part, the political frameworks in which claims about cultural diversity and expressions of cultural identity within a given society are pursued. Nevertheless, cultural identities may transcend the state system, as for instance in the case of systems of belief that unite members of the world religions. Diasporic communities also share cultural identities despite belonging to different nations and holding diverse citizenships (Schlesinger, 1991, Hall and du Gay, 1996).
+</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Đoạn văn có thể tóm tắt ngắn gọn như sau:
+Trong lịch sử truyền thông đại chúng, luôn có sự quan tâm đến mối quan hệ giữa truyền thông và bản sắc văn hóa. Truyền thông được cho là có khả năng hình thành, ảnh hưởng và định hình bản sắc tập thể, đặc biệt trong việc duy trì và xây dựng bản sắc dân tộc. Bản sắc dân tộc thường bao gồm nhiều yếu tố đa dạng như tôn giáo, ngôn ngữ, và dân tộc, nhưng chủ nghĩa dân tộc thường muốn nhấn mạnh một nền văn hóa duy nhất. Dù quốc gia là khung chính trị chủ yếu để thảo luận về đa dạng văn hóa, bản sắc văn hóa có thể vượt ra ngoài phạm vi quốc gia, ví dụ như các tôn giáo toàn cầu hoặc các cộng đồng di cư vẫn duy trì bản sắc chung dù sống ở nhiều quốc gia khác nhau.
+
+Bạn có muốn tôi rút gọn đoạn này thành một câu súc tích hơn nữa, hay giữ ở mức tóm tắt chi tiết như trên?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt cải tiến</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Tóm tắt đoạn văn sau trong 5–7 câu, nêu rõ các ý chính và giữ nguyên logic của bài.
+Throughout the history of mass communication, there has been a continuing interest in the relationships between mass media and cultural identities. This has been driven by the general, underlying assumption that different media variously form, influence,orshapecollective identities as such. How mass media might, at various times, specifically affect the formation and maintenance of national cultures and identities has occupied center stage in this continuing discussion. National identities normally embrace a range of cultural identities based on ethnic, religious, and linguistic diversity. Nationalists, however, often wish to portray national identity as based in a single culture. Nation-states remain, for the most part, the political frameworks in which claims about cultural diversity and expressions of cultural identity within a given society are pursued. Nevertheless, cultural identities may transcend the state system, as for instance in the case of systems of belief that unite members of the world religions. Diasporic communities also share cultural identities despite belonging to different nations and holding diverse citizenships (Schlesinger, 1991, Hall and du Gay, 1996).
+			</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Dưới đây là bản tóm tắt 5–7 câu, giữ nguyên logic của đoạn văn:  
+
+1. Trong lịch sử truyền thông đại chúng, người ta luôn quan tâm đến mối quan hệ giữa truyền thông và bản sắc văn hóa.  
+2. Truyền thông được cho là có khả năng hình thành, ảnh hưởng và định hình bản sắc tập thể.  
+3. Một trọng tâm lớn trong thảo luận là cách truyền thông tác động đến việc hình thành và duy trì bản sắc dân tộc.  
+4. Bản sắc dân tộc thường bao gồm sự đa dạng về dân tộc, tôn giáo, và ngôn ngữ.  
+5. Tuy nhiên, chủ nghĩa dân tộc thường muốn nhấn mạnh bản sắc dân tộc như một nền văn hóa duy nhất.  
+6. Các quốc gia dân tộc vẫn là khung chính trị chủ yếu để bàn luận và thể hiện sự đa dạng văn hóa.  
+7. Dù vậy, bản sắc văn hóa có thể vượt qua biên giới quốc gia, như trong trường hợp tôn giáo toàn cầu hoặc cộng đồng di cư vẫn duy trì bản sắc chung dù thuộc nhiều quốc gia khác nhau.  
+
+Bạn có muốn tôi tiếp tục rút gọn thành một **sơ đồ tư duy** để dễ hình dung các mối quan hệ giữa truyền thông, bản sắc văn hóa và quốc gia không?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt nâng cao</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Đóng vai một sinh viên đang ôn thi.
+
+Tóm tắt đoạn văn sau thành:
+
+* 5 ý chính dạng bullet
+* 1 câu kết luận tổng quát
+
+Ví dụ:
+
+Input:
+(đoạn văn mẫu)
+
+Output:
+
+* Ý 1
+* Ý 2
+* ...
+
+Đoạn văn:
+Throughout the history of mass communication, there has been a continuing interest in the relationships between mass media and cultural identities. This has been driven by the general, underlying assumption that different media variously form, influence,orshapecollective identities as such. How mass media might, at various times, specifically affect the formation and maintenance of national cultures and identities has occupied center stage in this continuing discussion. National identities normally embrace a range of cultural identities based on ethnic, religious, and linguistic diversity. Nationalists, however, often wish to portray national identity as based in a single culture. Nation-states remain, for the most part, the political frameworks in which claims about cultural diversity and expressions of cultural identity within a given society are pursued. Nevertheless, cultural identities may transcend the state system, as for instance in the case of systems of belief that unite members of the world religions. Diasporic communities also share cultural identities despite belonging to different nations and holding diverse citizenships (Schlesinger, 1991, Hall and du Gay, 1996).</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>* Mối quan hệ truyền thông – văn hóa: Lịch sử truyền thông đại chúng luôn quan tâm đến tác động của truyền thông đối với bản sắc văn hóa.  
+* Ảnh hưởng của truyền thông: Truyền thông có khả năng hình thành, ảnh hưởng và định hình bản sắc tập thể.  
+* Bản sắc dân tộc: Truyền thông đóng vai trò trong việc xây dựng và duy trì bản sắc dân tộc.  
+* Đa dạng văn hóa: Bản sắc dân tộc thường bao gồm sự đa dạng về dân tộc, tôn giáo và ngôn ngữ, nhưng chủ nghĩa dân tộc lại muốn nhấn mạnh một nền văn hóa duy nhất.  
+* Vượt biên giới quốc gia: Bản sắc văn hóa có thể vượt ra ngoài phạm vi quốc gia, thể hiện qua các tôn giáo toàn cầu và cộng đồng di cư.  
+
+👉 **Kết luận:** Truyền thông đại chúng vừa góp phần định hình bản sắc dân tộc trong khuôn khổ quốc gia, vừa cho thấy bản sắc văn hóa có thể vượt qua biên giới chính trị để gắn kết cộng đồng toàn cầu.</pre>
+		</div>
+	</div>
+
+	<h3 class="md-h3">2. Giải thích khái niệm</h3>
+
+	<h4 class="md-h4">Prompt cơ bản</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Giải thích Deep Learning là gì.</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>**Deep Learning (học sâu) là một nhánh của trí tuệ nhân tạo (AI) và học máy (Machine Learning), dựa trên mạng nơ-ron nhân tạo nhiều tầng để máy tính có thể tự học và xử lý dữ liệu phức tạp, đặc biệt hiệu quả trong các lĩnh vực như thị giác máy tính, nhận dạng giọng nói và xử lý ngôn ngữ tự nhiên.**  
+
+---
+
+## 🔑 Khái niệm cơ bản
+- **Deep Learning** là một phương pháp học máy sử dụng **mạng nơ-ron nhân tạo nhiều lớp (Artificial Neural Networks – ANNs)**.  
+- Các **layer (tầng)** trong mạng nơ-ron giúp trích xuất đặc trưng từ dữ liệu đầu vào, từ mức cơ bản (ví dụ: điểm ảnh trong ảnh) đến mức trừu tượng (ví dụ: khuôn mặt, cảm xúc).  
+- Quá trình học thường sử dụng **lan truyền ngược (backpropagation)** để điều chỉnh trọng số, giúp mô hình cải thiện độ chính xác.  [vi.wikipedia.org](https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_s%C3%A2u)  [vngcloud.vn](https://www.vngcloud.vn/vi/blog/what-is-deep-learning)  
+
+---
+
+## ⚙️ Cách hoạt động
+- **Layer đầu vào** nhận dữ liệu thô (hình ảnh, âm thanh, văn bản).  
+- **Các layer ẩn** thực hiện biến đổi phi tuyến tính, dần dần trích xuất đặc trưng phức tạp.  
+- **Layer đầu ra** đưa ra kết quả dự đoán hoặc phân loại.  
+- Mạng càng nhiều tầng → khả năng học biểu diễn dữ liệu càng mạnh.  [vngcloud.vn](https://www.vngcloud.vn/vi/blog/what-is-deep-learning)  
+
+---
+
+## 📌 Ứng dụng thực tế
+- **Thị giác máy tính**: nhận diện khuôn mặt, phân loại ảnh, xe tự lái.  
+- **Xử lý ngôn ngữ tự nhiên**: dịch máy, chatbot, phân tích cảm xúc.  
+- **Nhận dạng giọng nói**: trợ lý ảo, chuyển giọng nói thành văn bản.  
+- **Phát hiện bất thường**: an ninh mạng, phát hiện gian lận.  [vi.wikipedia.org](https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_s%C3%A2u)  [Unica.vn](https://unica.vn/blog/deep-learning-la-gi)  
+
+---
+
+## 📊 So sánh nhanh
+| **Khía cạnh** | **Machine Learning** | **Deep Learning** |
+|---------------|----------------------|-------------------|
+| **Đặc trưng dữ liệu** | Cần thiết kế thủ công | Tự động học đặc trưng |
+| **Độ phức tạp** | Vừa phải | Rất cao, nhiều tầng |
+| **Dữ liệu yêu cầu** | Ít dữ liệu cũng chạy được | Cần **Big Data** |
+| **Ứng dụng** | Dự đoán đơn giản, phân loại | Thị giác máy tính, NLP, giọng nói |
+
+---
+
+## ⚠️ Lưu ý & thách thức
+- **Cần dữ liệu lớn** và **tài nguyên tính toán mạnh (GPU/TPU)**.  
+- **Khó giải thích**: mô hình deep learning thường được coi là “hộp đen”.  
+- **Chi phí cao**: huấn luyện mô hình tốn thời gian và năng lượng.  [vi.wikipedia.org](https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_s%C3%A2u)  
+
+---
+
+👉 **Kết luận:** Deep Learning là công nghệ cốt lõi của AI hiện đại, giúp máy tính tự động học và xử lý dữ liệu phức tạp, nhưng đòi hỏi dữ liệu lớn, sức mạnh tính toán cao và thường khó giải thích kết quả.  
+
+Bạn có muốn tôi minh họa bằng **sơ đồ mạng nơ-ron** để dễ hình dung cách Deep Learning hoạt động không?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt cải tiến</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Giải thích Deep Learning cho người chưa có nền tảng, sử dụng ví dụ thực tế.</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Hãy tưởng tượng bạn đang giải thích cho một người hoàn toàn mới:  
+
+---
+
+## 📖 Giải thích đơn giản
+- **Deep Learning** là một cách để máy tính “học” từ dữ liệu, giống như não người học từ trải nghiệm.  
+- Nó sử dụng **mạng nơ-ron nhân tạo nhiều tầng**, mỗi tầng giống như một bộ lọc, giúp máy tính dần nhận ra đặc điểm phức tạp trong dữ liệu.  
+- Càng nhiều tầng, máy càng có khả năng hiểu dữ liệu ở mức trừu tượng hơn.  
+
+---
+
+## 🎯 Ví dụ thực tế
+- **Nhận diện khuôn mặt**: Khi bạn đăng ảnh lên Facebook, hệ thống có thể gợi ý tên bạn bè. Deep Learning giúp máy tính học cách nhận ra mắt, mũi, miệng và ghép chúng thành khuôn mặt cụ thể.  
+- **Xe tự lái**: Camera trên xe thu hình đường phố. Deep Learning giúp xe phân biệt đâu là người đi bộ, đâu là biển báo, đâu là xe khác.  
+- **Trợ lý ảo**: Khi bạn nói “Hey Siri” hoặc “Xin chào Google”, Deep Learning giúp máy hiểu giọng nói và chuyển thành lệnh.  
+
+---
+
+## 🌱 Hình dung dễ hiểu
+Hãy nghĩ đến việc **học nhận diện trái cây**:  
+- Lúc đầu, bạn chỉ thấy màu sắc (tầng đầu tiên).  
+- Sau đó, bạn nhận ra hình dáng (tầng tiếp theo).  
+- Cuối cùng, bạn phân biệt được đó là táo hay cam (tầng cuối cùng).  
+Deep Learning cũng học theo cách đó, nhưng với dữ liệu khổng lồ và tốc độ cực nhanh.  
+
+---
+
+👉 **Kết luận:** Deep Learning là công nghệ giúp máy tính tự học từ dữ liệu phức tạp, giống như con người học từ trải nghiệm, và nó đang đứng sau nhiều ứng dụng quen thuộc như nhận diện khuôn mặt, xe tự lái, và trợ lý ảo.  
+
+Bạn có muốn tôi minh họa bằng một **sơ đồ mạng nơ-ron đơn giản** để trực quan hóa cách dữ liệu đi qua các tầng không?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt nâng cao</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Đóng vai giảng viên khoa học máy tính. Hãy giải thích "Deep Learning" cho sinh viên năm nhất:
+
+* Dùng 1 phép ẩn dụ đời thường
+* Đưa 1 ví dụ thực tế
+* Trình bày trong 4 gạch đầu dòng
+* Tránh thuật ngữ chuyên sâu nếu không giải thích</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Đóng vai giảng viên khoa học máy tính, tôi sẽ giải thích cho sinh viên năm nhất về **Deep Learning** như sau:  
+
+---
+
+* **Ẩn dụ đời thường**: Hãy tưởng tượng bạn học cách nhận diện trái cây. Ban đầu bạn chỉ thấy màu sắc, sau đó bạn nhận ra hình dáng, rồi cuối cùng bạn biết đó là táo hay cam. Deep Learning cũng giống như vậy: nó học từ những đặc điểm đơn giản đến phức tạp để đưa ra kết quả.  
+
+* **Ví dụ thực tế**: Khi bạn đăng ảnh lên Facebook, hệ thống có thể tự động gợi ý tên bạn bè. Đó là nhờ Deep Learning, vì máy tính đã học cách nhận ra mắt, mũi, miệng và ghép chúng thành khuôn mặt cụ thể.  
+
+* **Cách hoạt động cơ bản**: Deep Learning dùng nhiều “tầng” xử lý dữ liệu. Mỗi tầng giống như một bộ lọc, giúp máy tính hiểu dữ liệu sâu hơn, từ chi tiết nhỏ đến khái niệm lớn.  
+
+* **Ứng dụng phổ biến**: Nó được dùng trong nhận diện khuôn mặt, xe tự lái, trợ lý ảo, và dịch ngôn ngữ.  
+
+---
+
+👉 **Kết luận:** Deep Learning là cách để máy tính “học” giống con người, từ những đặc điểm đơn giản đến phức tạp, và hiện đang đứng sau nhiều công nghệ mà sinh viên gặp hằng ngày.  
+
+Bạn có muốn tôi minh họa bằng một **sơ đồ trực quan mạng nơ-ron** để dễ hình dung hơn không?</pre>
+		</div>
+	</div>
+
+	<h3 class="md-h3">3. Tạo câu hỏi ôn tập</h3>
+
+	<h4 class="md-h4">Prompt cơ bản</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Tạo câu hỏi về chủ đề Photosynthesis.</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Dưới đây là một số câu hỏi về chủ đề **Photosynthesis (quang hợp)**, phù hợp cho việc ôn tập:  
+
+---
+
+* **Khái niệm quang hợp**: Quang hợp là gì và tại sao nó quan trọng đối với sự sống trên Trái Đất?  
+* **Nguyên liệu đầu vào**: Những chất nào cần thiết cho quá trình quang hợp (ví dụ: ánh sáng, nước, khí CO₂)?  
+* **Sản phẩm đầu ra**: Quang hợp tạo ra những sản phẩm gì và chúng có vai trò gì đối với sinh vật khác?  
+* **Vai trò diệp lục**: Diệp lục (chlorophyll) có chức năng gì trong quá trình quang hợp?  
+* **Ảnh hưởng môi trường**: Những yếu tố nào của môi trường (ánh sáng, nhiệt độ, nồng độ CO₂) ảnh hưởng đến tốc độ quang hợp?  
+
+---
+
+👉 **Kết luận:** Quang hợp là quá trình nền tảng giúp cây xanh tạo ra năng lượng và oxy, đồng thời duy trì sự sống cho toàn bộ hệ sinh thái.  
+
+Bạn có muốn tôi biến những câu hỏi này thành một **quiz trắc nghiệm** để bạn tự kiểm tra kiến thức không?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt cải tiến</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Tạo 10 câu hỏi trắc nghiệm về Photosynthesis, kèm đáp án.</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Dưới đây là **10 câu hỏi trắc nghiệm về Photosynthesis (quang hợp)** kèm đáp án:  
+
+---
+
+1. Quang hợp xảy ra chủ yếu ở bộ phận nào của cây?  
+   a) Rễ  
+   b) Thân  
+   c) Lá ✅  
+   d) Hoa  
+
+2. Chất màu nào đóng vai trò chính trong việc hấp thụ ánh sáng?  
+   a) Carotene  
+   b) Xanthophyll  
+   c) Chlorophyll ✅  
+   d) Anthocyanin  
+
+3. Nguyên liệu cần thiết cho quá trình quang hợp là gì?  
+   a) Nước, CO₂, ánh sáng ✅  
+   b) Oxy, đường, ánh sáng  
+   c) Nitơ, nước, ánh sáng  
+   d) Protein, CO₂, ánh sáng  
+
+4. Sản phẩm chính của quang hợp là gì?  
+   a) Oxy và đường (glucose) ✅  
+   b) Nước và protein  
+   c) Nitơ và chất béo  
+   d) Vitamin và khoáng chất  
+
+5. Quang hợp diễn ra ở bào quan nào trong tế bào thực vật?  
+   a) Nhân  
+   b) Ty thể  
+   c) Lục lạp ✅  
+   d) Ribosome  
+
+6. Phương trình tổng quát của quang hợp là gì?  
+   a) CO₂ + H₂O + ánh sáng → O₂ + glucose ✅  
+   b) O₂ + glucose → CO₂ + H₂O  
+   c) N₂ + H₂O → protein  
+   d) CO₂ + O₂ → năng lượng  
+
+7. Quang hợp cung cấp gì cho sinh vật dị dưỡng (như động vật)?  
+   a) Năng lượng hóa học và oxy ✅  
+   b) Nitơ và khoáng chất  
+   c) Protein và chất béo  
+   d) Vitamin  
+
+8. Yếu tố nào KHÔNG ảnh hưởng trực tiếp đến tốc độ quang hợp?  
+   a) Ánh sáng  
+   b) Nhiệt độ  
+   c) Nồng độ CO₂  
+   d) Âm thanh ✅  
+
+9. Quang hợp giúp duy trì điều gì trong khí quyển Trái Đất?  
+   a) Tăng CO₂  
+   b) Giảm O₂  
+   c) Duy trì cân bằng O₂ và CO₂ ✅  
+   d) Tăng Nitơ  
+
+10. Cộng đồng nào hưởng lợi trực tiếp từ sản phẩm quang hợp?  
+    a) Chỉ thực vật  
+    b) Chỉ động vật  
+    c) Tất cả sinh vật sống ✅  
+    d) Chỉ vi sinh vật  
+
+---
+
+👉 **Kết luận:** Quang hợp là quá trình nền tảng giúp cây xanh tạo ra năng lượng và oxy, đồng thời duy trì sự sống cho toàn bộ hệ sinh thái.  
+
+Bạn có muốn tôi thiết kế những câu hỏi này thành một **quiz tương tác** để bạn tự làm và chấm điểm ngay trong quá trình ôn tập không?</pre>
+		</div>
+	</div>
+
+	<h4 class="md-h4">Prompt nâng cao</h4>
+	<div class="md-chat">
+		<div class="md-chat-user">
+			<pre>Bạn là một giáo viên sinh học. Hãy tạo bộ câu hỏi ôn tập về Photosynthesis bằng tiếng Việt, bao gồm:
+
+* 5 câu nhận biết
+* 3 câu hiểu
+* 2 câu vận dụng
+
+Mỗi câu gồm:
+* Câu hỏi
+* 4 đáp án A–D
+* Đáp án đúng + giải thích ngắn</pre>
+		</div>
+
+		<div class="md-chat-ai">
+			<pre>Dưới đây là bộ câu hỏi ôn tập về **Photosynthesis (quang hợp)** bằng tiếng Việt, phân loại theo mức độ nhận biết – hiểu – vận dụng:  
+
+---
+
+## 🟢 5 câu nhận biết
+1. Quang hợp diễn ra chủ yếu ở bộ phận nào của cây?  
+   A. Rễ  
+   B. Thân  
+   C. Lá ✅  
+   D. Hoa  
+   → **Giải thích:** Lá chứa nhiều lục lạp, nơi diễn ra quang hợp.  
+
+2. Chất màu nào hấp thụ ánh sáng để thực hiện quang hợp?  
+   A. Carotene  
+   B. Chlorophyll ✅  
+   C. Xanthophyll  
+   D. Melanin  
+   → **Giải thích:** Chlorophyll (diệp lục) là sắc tố chính hấp thụ ánh sáng.  
+
+3. Sản phẩm chính của quang hợp là gì?  
+   A. Oxy và glucose ✅  
+   B. Nước và protein  
+   C. Nitơ và chất béo  
+   D. Vitamin và khoáng chất  
+   → **Giải thích:** Quang hợp tạo ra đường (glucose) và giải phóng oxy.  
+
+4. Bào quan nào trong tế bào thực vật thực hiện quang hợp?  
+   A. Nhân  
+   B. Ty thể  
+   C. Lục lạp ✅  
+   D. Ribosome  
+   → **Giải thích:** Lục lạp chứa diệp lục và hệ thống quang hợp.  
+
+5. Nguyên liệu cần cho quang hợp là gì?  
+   A. O₂, ánh sáng, protein  
+   B. CO₂, H₂O, ánh sáng ✅  
+   C. N₂, H₂O, ánh sáng  
+   D. Glucose, O₂, ánh sáng  
+   → **Giải thích:** Quang hợp cần CO₂, nước và ánh sáng mặt trời.  
+
+---
+
+## 🟡 3 câu hiểu
+6. Tại sao quang hợp lại quan trọng đối với sinh vật dị dưỡng (như động vật)?  
+   A. Cung cấp nitơ  
+   B. Cung cấp năng lượng hóa học và oxy ✅  
+   C. Cung cấp protein  
+   D. Cung cấp vitamin  
+   → **Giải thích:** Quang hợp tạo ra thức ăn (glucose) và oxy cho động vật.  
+
+7. Nếu không có ánh sáng, quá trình quang hợp sẽ thế nào?  
+   A. Diễn ra bình thường  
+   B. Dừng lại ✅  
+   C. Tăng tốc độ  
+   D. Chuyển thành hô hấp  
+   → **Giải thích:** Ánh sáng là nguồn năng lượng chính, thiếu ánh sáng thì quang hợp không xảy ra.  
+
+8. Vì sao quang hợp giúp duy trì cân bằng khí quyển?  
+   A. Tăng CO₂  
+   B. Giảm O₂  
+   C. Giữ cân bằng O₂ và CO₂ ✅  
+   D. Tăng Nitơ  
+   → **Giải thích:** Quang hợp hấp thụ CO₂ và thải ra O₂, giữ cân bằng khí.  
+
+---
+
+## 🔴 2 câu vận dụng
+9. Nếu một khu rừng bị chặt phá, điều gì sẽ xảy ra với lượng CO₂ và O₂ trong khí quyển?  
+   A. CO₂ giảm, O₂ tăng  
+   B. CO₂ tăng, O₂ giảm ✅  
+   C. Cả hai đều tăng  
+   D. Cả hai đều giảm  
+   → **Giải thích:** Mất cây xanh làm giảm quang hợp, dẫn đến CO₂ tích tụ và O₂ giảm.  
+
+10. Một học sinh đặt cây trong phòng kín không có ánh sáng, sau vài ngày cây héo. Nguyên nhân chính là gì?  
+   A. Thiếu nước  
+   B. Thiếu ánh sáng để quang hợp ✅  
+   C. Thiếu đất  
+   D. Thiếu khoáng chất  
+   → **Giải thích:** Không có ánh sáng, cây không thể quang hợp để tạo năng lượng duy trì sự sống.  
+
+---
+
+👉 **Kết luận:** Bộ câu hỏi này giúp sinh viên nắm vững từ kiến thức cơ bản (nhận biết), hiểu bản chất (hiểu), đến vận dụng thực tế (vận dụng) của quá trình quang hợp.  
+
+Bạn có muốn tôi thiết kế thêm một **quiz tương tác** để bạn tự làm và chấm điểm ngay trong quá trình ôn tập không?</pre>
+		</div>
+	</div>
+</section>
+
+			<section class="md-section">
+				<h2 class="md-h2">IV. So sánh kết quả</h2>
+
+				<h3 class="md-h3">Bảng so sánh</h3>
+				<div class="md-table-container">
+					<table class="md-table md-table--prj3-2">
+						<thead>
+							<tr>
+								<th>Tiêu chí</th>
+								<th>Prompt cơ bản</th>
+								<th>Prompt cải tiến</th>
+								<th>Prompt nâng cao</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Độ rõ ràng</strong></td>
+								<td>Trung bình</td>
+								<td>Trung bình</td>
+								<td>Cao</td>
+							</tr>
+							<tr>
+								<td><strong>Độ đầy đủ</strong></td>
+								<td>Tương đối đủ</td>
+								<td>Đủ ý chính</td>
+								<td>Rất đầy đủ</td>
+							</tr>
+							<tr>
+								<td><strong>Cấu trúc</strong></td>
+								<td>Rõ ràng</td>
+								<td>Rõ ràng</td>
+								<td>Rất rõ ràng</td>
+							</tr>
+							<tr>
+								<td><strong>Tính hữu ích</strong></td>
+								<td>Khá</td>
+								<td>Khá</td>
+								<td>Cao</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3 class="md-h3">Nhận xét</h3>
+				<ul class="md-list">
+					<li class="md-item">
+						<span
+							>Prompt cơ bản → output chung chung, thường thiếu
+							kiểm soát</span
+						>
+					</li>
+					<li class="md-item">
+						<span
+							>Prompt cải tiến → có cải thiện nhưng chưa tối
+							ưu</span
+						>
+					</li>
+					<li class="md-item">
+						<span
+							>Prompt nâng cao → output sát yêu cầu, có cấu trúc
+							tốt</span
+						>
+					</li>
+				</ul>
+        <p class="md-p-content">
+					<strong>-&gt; Kết luận:</strong> Do những tiến bộ của AI trong thời gian vừa qua nên
+							kết quả của 3 loại prompt không chênh lệch quá nhiều
+							về chất lượng. Một phần khác là do “tính cách” của
+							chatbot đã được thiết lập ở mức cục bộ: máy móc,
+							chính xác với hệ số temperature thấp, trả lời đúng
+							trọng tâm, không bịa thông tin
+				</p>
+			</section>
+
+			<section class="md-section">
+				<h2 class="md-h2">V. Phân tích hiệu quả Prompt</h2>
+				<p class="md-p-content"><strong>a. Role prompting</strong></p>
+				<ul class="md-list">
+					<li class="md-item">
+						<span
+							>Khi yêu cầu “đóng vai giảng viên”, mô hình điều
+							chỉnh cách diễn đạt phù hợp hơn</span
+						>
+					</li>
+				</ul>
+
+				<p class="md-p-content"><strong>b. Ràng buộc đầu ra</strong></p>
+				<ul class="md-list">
+					<li class="md-item">
+						<span
+							>Ví dụ: “4 gạch đầu dòng” → output có cấu trúc
+							rõ</span
+						>
+					</li>
+				</ul>
+
+				<p class="md-p-content">
+					<strong>c. Few-shot (ví dụ mẫu)</strong>
+				</p>
+				<ul class="md-list">
+					<li class="md-item">
+						<span
+							>Giúp mô hình hiểu chính xác format mong muốn</span
+						>
+					</li>
+				</ul>
+
+				<p class="md-p-content">
+					<strong>d. Chỉ định đối tượng</strong>
+				</p>
+				<ul class="md-list">
+					<li class="md-item">
+						<span>“Sinh viên năm nhất” → giảm độ phức tạp</span>
+					</li>
+				</ul>
+
+				<p class="md-p-content">
+					<strong>-&gt; Kết luận:</strong> Không phải prompt dài hơn
+					là tốt hơn, mà là cụ thể + có cấu trúc + đúng mục tiêu
+				</p>
+			</section>
+
+			<section class="md-section">
+				<h2 class="md-h2">VI. Nguyên tắc viết Prompt hiệu quả</h2>
+				<ul class="md-list">
+					<li class="md-item">
+						<span>1. Cụ thể hóa yêu cầu</span>
+					</li>
+					<li class="md-item">
+						<span>2. Chỉ định vai trò (Role prompting)</span>
+					</li>
+					<li class="md-item">
+						<span>3. Quy định format đầu ra</span>
+					</li>
+					<li class="md-item">
+						<span>4. Chia nhỏ yêu cầu</span>
+					</li>
+					<li class="md-item">
+						<span>5. Dùng ví dụ (Few-shot)</span>
+					</li>
+					<li class="md-item">
+						<span>6. Xác định đối tượng người học</span>
+					</li>
+				</ul>
+			</section>
+
+			<section class="md-section">
+				<h2 class="md-h2">VII. Kết luận</h2>
+				<p class="md-p-content">
+					Việc viết prompt không chỉ là đặt câu hỏi mà là thiết kế đầu
+					vào để kiểm soát đầu ra. Prompt càng rõ ràng, có cấu trúc và
+					định hướng tốt thì kết quả càng chất lượng.
+				</p>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-container">
+				<div class="footer-left">
+					<h3 class="footer-title">Kết nối với tôi</h3>
+					<div class="social-grid">
+						<a
+							href="https://www.facebook.com/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/facebook.svg"
+								alt="Facebook"
+								class="icon"
+							/>
+							<span class="social-name">Facebook</span>
+							<span class="social-username">Long Bùi</span>
+						</a>
+
+						<a
+							href="https://www.instagram.com/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/instagram.svg"
+								alt="Instagram"
+								class="icon"
+							/>
+							<span class="social-name">Instagram</span>
+							<span class="social-username">@longbui1810</span>
+						</a>
+
+						<a
+							href="https://www.threads.net/@longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/threads.svg"
+								alt="Threads"
+								class="icon"
+							/>
+							<span class="social-name">Threads</span>
+							<span class="social-username">@longbui1810</span>
+						</a>
+
+						<a
+							href="https://www.youtube.com/@copperII_"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/youtube.svg"
+								alt="Youtube"
+								class="icon"
+							/>
+							<span class="social-name">Youtube</span>
+							<span class="social-username">@copperII_</span>
+						</a>
+
+						<a
+							href="https://github.com/Copper2"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/github.svg"
+								alt="Github"
+								class="icon"
+							/>
+							<span class="social-name">Github</span>
+							<span class="social-username">Copper2</span>
+						</a>
+
+						<a
+							href="https://www.linkedin.com/in/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="/assets/logo/social-media/linkedin.svg"
+								alt="LinkedIn"
+								class="icon"
+							/>
+							<span class="social-name">LinkedIn</span>
+							<span class="social-username">Long Bùi</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="footer-right">
+					<h3 class="footer-title">Thông tin sinh viên</h3>
+					<ul class="info-list">
+						<li class="info-item">
+							<span class="info-label">Trường:</span>
+							<span class="info-value"
+								>Trường Đại học Ngoại ngữ - ĐHQGHN
+								(ULIS-VNU)</span
+							>
+						</li>
+						<li class="info-item">
+							<span class="info-label">Ngành học:</span>
+							<span class="info-value">Sư phạm Anh</span>
+						</li>
+						<li class="info-item">
+							<span class="info-label">MSSV:</span>
+							<span class="info-value">25040135</span>
+						</li>
+						<li class="info-item">
+							<span class="info-label">Email:</span>
+							<span class="info-value">
+								<a
+									href="mailto:minhlong18102007@gmail.com"
+									class="info-email-link"
+									>minhlong18102007@gmail.com</a
+								>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2026 Bùi Minh Long. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+
+	<script src="/js/global.js"></script>
+</html>

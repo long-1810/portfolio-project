@@ -1,0 +1,417 @@
+/* =====================================================
+   MARKDOWN DOCUMENT
+   ===================================================== */
+
+.md-document {
+	width: min(100%, 1000px);
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+/* =====================================================
+   MARKDOWN INFO
+   ===================================================== */
+
+.md-info {
+	margin-bottom: 4rem;
+}
+
+.md-info-h2 {
+	color: var(--primary-color);
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.md-info-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.md-info-card {
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	border-radius: 16px;
+	padding: 1.5rem;
+	transition: var(--transition);
+	user-select: none;
+	cursor: default;
+}
+
+.md-info-card:hover {
+	transform: translateY(-2px);
+
+	border-color: rgba(250, 204, 21, 0.35);
+
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.md-info-h3 {
+	color: var(--text-main);
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.md-info-card p {
+	color: var(--text-muted);
+	line-height: 1.7;
+}
+
+.md-tag {
+	background: rgba(250, 204, 21, 0.12);
+	color: var(--primary-color);
+	border: 1px solid rgba(250, 204, 21, 0.25);
+	border-radius: 999px;
+	padding: 0.4rem 0.9rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.md-tech-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.md-tech-row {
+	display: flex;
+	align-items: left;
+	gap: 1rem;
+}
+
+.md-tech-label {
+	min-width: 220px;
+	font-weight: 600;
+	color: var(--text-main);
+}
+
+.md-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+/* =====================================================
+   HEADINGS
+   ===================================================== */
+
+.md-h1 {
+	text-align: center;
+
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+
+	color: var(--text-main);
+
+	margin-bottom: 0.5rem;
+}
+
+.md-date {
+	text-align: center;
+
+	color: var(--text-muted);
+	font-size: 0.95rem;
+
+	padding-bottom: 2rem;
+	margin-bottom: 3rem;
+
+	border-bottom: 1px solid var(--border-color);
+}
+
+.md-h2 {
+	color: var(--primary-color);
+
+	font-size: 1.8rem;
+	font-weight: 700;
+
+	margin-top: 4rem;
+	margin-bottom: 1.5rem;
+
+	padding-left: 1rem;
+
+	border-left: 5px solid var(--accent-color);
+}
+
+.md-h3,
+.md-h4,
+.md-h5 {
+	color: var(--text-main);
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
+
+.md-section {
+	margin-bottom: 3rem;
+	position: relative;
+}
+
+/* =====================================================
+   LISTS
+   ===================================================== */
+
+.md-list {
+	list-style: none;
+	padding-left: 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.md-item {
+	background: var(--bg-card);
+
+	border: 2px solid var(--border-color);
+	border-radius: 14px;
+
+	padding: 1.25rem;
+
+	transition: var(--transition);
+}
+
+.md-item:hover {
+	transform: translateY(-2px);
+
+	border-color: rgba(250, 204, 21, 0.35);
+
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.md-item p {
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+/* =====================================================
+   ILLUSTRATIONS
+   ===================================================== */
+
+.md-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.md-illustration {
+	display: block;
+
+	width: auto;
+	max-width: 100%;
+	height: auto;
+
+	align-self: center;
+
+	/* border-radius: 10px; */
+	border: 1px solid var(--border-color);
+
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+
+	transition: var(--transition);
+}
+
+.md-illustration:hover {
+	border-color: var(--primary-color);
+
+	box-shadow: 0 10px 24px rgba(250, 204, 21, 0.15);
+}
+
+/* ==========================================================================
+   PARAGRAPHS AND LINKS
+   ========================================================================== */
+
+.md-p-content {
+	font-size: 1.05rem;
+	line-height: 1.7;
+	color: var(--text-main);
+	margin: 1.25rem 0;
+	text-align: justify;
+}
+
+/* Định dạng các liên kết trong bài viết */
+.md-link {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: 500;
+	border-bottom: 1px dashed transparent;
+	transition: var(--transition);
+}
+
+.md-link:hover {
+	color: var(--text-main);
+	border-bottom-color: var(--primary-color);
+	text-decoration: none;
+}
+
+.md-link:focus {
+	outline: 2px solid var(--accent-color);
+	outline-offset: 2px;
+}
+
+/* ==========================================================================
+   TABLE
+   ========================================================================== */
+
+.md-table-container {
+	width: 100%;
+	overflow-x: auto;
+	margin: 2rem 0;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	border: 1px solid var(--border-color);
+	background-color: var(--bg-card);
+}
+
+/* Thẻ table chính */
+.md-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 0.95rem;
+	background-color: var(--bg-card);
+}
+
+/* Header của bảng */
+.md-table thead {
+	background-color: rgba(
+		255,
+		255,
+		255,
+		0.03
+	); /* Tạo lớp nền nhẹ cho thead trên nền card tối */
+	color: var(--text-main);
+	border-bottom: 2px solid var(--border-color);
+}
+
+.md-table th {
+	padding: 14px 16px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+	color: var(
+		--primary-color
+	); /* Đổi màu chữ tiêu đề bảng sang màu nhấn để nổi bật */
+
+	text-align: center;
+}
+
+/* Các ô nội dung */
+.md-table td {
+	padding: 14px 16px;
+	border-bottom: 1px solid var(--border-color);
+	color: var(--text-main);
+	vertical-align: top;
+	line-height: 1.5;
+
+	text-align: center;
+}
+
+/* Các đoạn text phụ hoặc chú thích trong table */
+.md-table td em,
+.md-table td span.muted {
+	color: var(--text-muted);
+}
+
+/* Hiệu ứng dòng xen kẽ (Zebra striping) thích ứng nền tối */
+.md-table tbody tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* Hiệu ứng hover khi di chuột qua từng dòng */
+.md-table tbody tr:hover {
+	background-color: rgba(
+		254,
+		204,
+		21,
+		0.08
+	); /* Sử dụng mã tint dựa trên #facc15 để ăn rơ với primary-color */
+	transition: var(--transition);
+}
+
+/* Định dạng cột đặc thù (STT và Năm) */
+.md-table td:first-child,
+.md-table th:first-child {
+	text-align: center;
+	width: 50px;
+	color: var(--text-muted);
+}
+
+.md-table td:nth-child(5) {
+	text-align: center;
+}
+
+/* CALLOUT */
+.md-p--box {
+	white-space: pre-wrap;
+	word-break: break-word;
+	font-family: Consolas, Monaco, monospace;
+}
+
+/* CHAT AI */
+
+.md-chat {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 1rem 0;
+	padding: 1.5rem;
+
+  background: var(--bg-card);
+	border: 2px solid var(--border-color);
+
+	transition: var(--transition);
+}
+
+.md-chat:hover {
+	transform: translateY(-2px);
+	border-color: rgba(250, 204, 21, 0.35);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.md-chat-user,
+.md-chat-ai {
+	display: flex;
+}
+
+.md-chat-user {
+	justify-content: flex-end;
+}
+
+.md-chat-user pre,
+.md-chat-ai pre {
+	margin: 0;
+	padding: 1rem;
+	border-radius: 1rem;
+	white-space: pre-wrap;
+	word-break: break-word;
+	font-family: Consolas, "Courier New", monospace;
+	max-width: 90%;
+}
+
+.md-chat-user pre {
+	background: var(--accent-color);
+	color: white;
+}
+
+.md-chat-ai pre {
+	border: 1px solid var(--text-main);
+}
+
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+	.md-info-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.md-tech-row {
+		flex-direction: column;
+		justify-content: center;
+	}
+}

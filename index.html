@@ -1,0 +1,614 @@
+﻿<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personal Portfolio | Bùi Minh Long</title>
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<img src="assets/logo/teacup.svg" alt="logo" class="logo" />
+
+				<ul class="nav-links">
+					<li><a href="#" class="active">Giới thiệu</a></li>
+					<li><a href="/pages/projects.html">Dự án</a></li>
+					<li><a href="/pages/summary.html">Tổng kết</a></li>
+				</ul>
+
+				<div class="nav-toggles">
+					<button
+						class="toggle-btn theme-toggle"
+						id="theme-toggle-btn"
+						aria-label="Toggle Dark/Light Mode"
+					>
+						<img
+							src="#"
+							alt="Theme Icon"
+							class="icon"
+							id="theme-icon-img"
+						/>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<section id="about" class="about-hero-section">
+			<div class="about-container">
+				<div class="about-content">
+					<span class="about-subtitle">Xin chào, tôi là</span>
+					<h1 class="about-title">Bùi Minh Long</h1>
+					<p class="about-spec"><span id="typing-text"></span></p>
+					<p class="about-description">
+						Portfolio này là dự án cuối kỳ của môn NMCNS (ULIS-VNU).
+						Nội dung thể hiện các kỹ năng số cốt lõi như quản lý
+						thông tin, sử dụng công cụ số, hợp tác trực tuyến, ứng
+						dụng AI và giải quyết vấn đề trong môi trường số thông
+						qua các dự án và bài tập thực hành.
+					</p>
+
+					<div class="about-goals">
+						<div class="goal-item">
+							<strong>Mục tiêu:</strong> Xây dựng portfolio cá
+							nhân làm minh chứng cho năng lực công nghệ số, kỹ
+							năng lập trình, khả năng ứng dụng AI và kinh nghiệm
+							triển khai dự án, phục vụ định hướng học tập và nghề
+							nghiệp trong tương lai.
+						</div>
+					</div>
+					<div class="about-buttons">
+						<a href="pages/projects.html" class="btn btn-primary"
+							>Khám phá Dự án</a
+						>
+						<a href="pages/summary.html" class="btn btn-secondary"
+							>Tổng kết</a
+						>
+					</div>
+				</div>
+				<div class="about-avatar">
+					<div class="avatar-frame">
+						<img
+							src="assets/images/teago.jpg"
+							alt="Profile Avatar"
+							id="portfolio-avatar"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- START -->
+		<section id="skills-achievements" class="skills-achievements-section">
+			<div class="section-container">
+				<div class="section-header">
+					<h2 class="section-title">Kỹ năng - Thành tích</h2>
+					<!-- <p class="section-subtitle">Tổng hợp các kỹ năng và thành tích cá nhân nổi bật</p> -->
+				</div>
+
+				<div class="skills-achievements-grid">
+					<div class="info-card lang-card">
+						<div class="card-icon-wrapper">
+							<span class="card-icon">🌐</span>
+						</div>
+						<h3 class="card-box-title">Năng lực Ngoại ngữ</h3>
+						<ul class="achievement-list">
+							<li>
+								<span class="badge badge-en">Tiếng Anh</span>
+								<div>
+									<strong
+										>IELTS 8.0, Giải Ba HSGTP, 9.75 Anh TN
+										THPT</strong
+									>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-fr">Tiếng Pháp</span>
+								<div>
+									<strong
+										>DELF B1, Từng học hệ Song ngữ tiếng
+										Pháp</strong
+									>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-jp">Tiếng Nhật</span>
+								<div>
+									<strong>JLPT N3</strong>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="info-card exam-card">
+						<div class="card-icon-wrapper">
+							<span class="card-icon">📃</span>
+						</div>
+						<h3 class="card-box-title">Thành tích khác</h3>
+						<ul class="achievement-list">
+							<li>
+								<span class="badge badge-hsa">HSA</span>
+								<div>
+									<strong>120</strong>
+									<span class="detail-text"
+										>(Tổ hợp Tiếng Anh, điểm phần tiếng Anh
+										48/50)</span
+									>
+								</div>
+							</li>
+
+							<li>
+								<span class="badge badge-spt">SPT</span>
+								<div>
+									<strong>25.05</strong>
+									<span class="detail-text"
+										>(Tổ hợp Toán-Văn-Anh)</span
+									>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-vnu">VNU Olympic</span>
+								<div>
+									<strong>Giải Ba</strong>
+									<span class="detail-text"
+										>(Môn thi: Tiếng Anh)</span
+									>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-nckh">NCKH</span>
+								<div>
+									<strong>Giải Nhì NCKH-ĐMST cấp ĐHNN</strong>
+									<span class="detail-text"
+										>(Đợt 4, 2025)</span
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="info-card skill-card">
+						<div class="card-icon-wrapper">
+							<span class="card-icon">💣</span>
+						</div>
+						<h3 class="card-box-title">Các kỹ năng khác</h3>
+						<ul class="achievement-list">
+							<li>
+								<span class="badge badge-skill">Lập trình</span>
+								<div>
+									<strong
+										>Python, Web (HTML, CSS, JS, Node,
+										React)</strong
+									>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-skill">Game</span>
+								<div>
+									<strong>
+										Minecraft, Roblox, Stardew Valley,
+										Undertale, Osu!(Mania), FNF
+									</strong>
+								</div>
+							</li>
+							<li>
+								<span class="badge badge-skill">Nhạc cụ</span>
+								<div>
+									<strong
+										>Piano (Grand, Keyboard, Organ)</strong
+									>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="timeline-future" class="timeline-future-section">
+			<div class="section-container">
+				<div class="section-header">
+					<h2 class="section-title">
+						Timeline: Thành tựu & Mục tiêu
+					</h2>
+					<p class="section-subtitle">
+						Nhìn lại để trân trọng hành trình đã qua, hướng tới tương lai với tinh thần học hỏi, đổi mới và không ngừng phát triển.
+					</p>
+				</div>
+
+				<div class="timeline-wrapper">
+					<div class="timeline-line"></div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2013</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Nhập học trường TH Đinh Tiên Hoàng, Hải Phòng</h4>
+							<p class="timeline-desc">
+								Theo học hệ Song Ngữ tiếng Pháp
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2018</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Nhập học trường THCS Hồng Bàng, Hải Phòng</h4>
+							<p class="timeline-desc">
+								Tiếp tục theo học hệ Song Ngữ tiếng Pháp
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 01/2022</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Thi đạt chứng chỉ DELF B1</h4>
+							<p class="timeline-desc">
+								CO 23 - CE 19 - PE 14 - PO 10
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 02/2022</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt Giải Ba học sinh giỏi môn Tiếng Anh cấp Quận</h4>
+							<p class="timeline-desc">
+								Do ảnh hưởng của đại dịch Covid nên không tổ chức thi cấp Thành phố
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 09/2022</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Trúng tuyển vào Chuyên Anh THPT Chuyên Trần Phú, Hải Phòng</h4>
+							<p class="timeline-desc">
+								Đứng thứ 54/70 trong số những thí sinh trúng tuyển
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 03/2024</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Thi đạt chứng chỉ IELTS 8.0</h4>
+							<p class="timeline-desc">
+								LIS 8.0 - REA 9.0 - WRI 7.5 - SPE 7.0
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 04/2024</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Bắt đầu làm trợ giảng kỹ năng Nói ở trung tâm IELTS Gurus</h4>
+							<p class="timeline-desc">
+								Quá trình trợ giảng diễn ra trong 05 tháng. Việc trợ giảng một kỹ năng khó như Nói đã giúp em học được nhiều kiến thức và kinh nghiệm quý giá.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 10/2024</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt giải Ba trong cuộc thi VNU Olympic</h4>
+							<p class="timeline-desc">
+								
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 03/2024</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt 120 điểm trong kỳ thi HSA - VNU</h4>
+							<p class="timeline-desc">
+								Định lượng 32 - Định tính 40 - Tiếng Anh 48
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 05/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt 25.05 điểm SPT</h4>
+							<p class="timeline-desc">
+								Toán 9.0 - Văn 7.5 - Anh 8.55
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 06/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt 36 điểm tổng trong kỳ thi TN THPT</h4>
+							<p class="timeline-desc">
+								Toán 8.0 - Văn 8.25 - Anh 9.75 - Lý 10.0 (Nằm trong top 200 thí sinh đạt điểm cao nhất của Hải Phòng sau sáp nhập)
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 07/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Trúng tuyển ULIS - VNU, chuyên ngành Sư phạm Anh</h4>
+							<p class="timeline-desc">
+								Một đời rung chuyển vì tin báo trúng tuyển
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 09/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Bắt đầu công việc gia sư</h4>
+							<p class="timeline-desc">
+								Offer công việc từ người quen đã giúp em làm quen với công việc gia sư nói riêng và dạy học nói chung. Môn học mà em gia sư là Toán và Lý (trái với chuyên ngành). Tuy vậy, đây cũng là một trải nghiệm quý báu để chuẩn bị cho con đường nghề giáo sau này.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 10/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Đạt giải Nhì trong đợt 4 Nghiệm thu NCKH-ĐMST</h4>
+							<p class="timeline-desc">
+								Từ một ý tưởng về chatbot hỗ trợ trong NCKH ban đầu, dự án đã được phát triển thành sản phẩm hoàn chỉnh và được ghi nhận tại đợt nghiệm thu NCKH-ĐMST cấp trường.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 03/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Nhận được học bổng khuyến học kỳ I</h4>
+							<p class="timeline-desc">
+								GPA 3.86, ĐRL 91
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Tháng 07/2026</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">Thi đạt chứng chỉ JLPT N3</h4>
+							<p class="timeline-desc">
+								MNF MNF Moji-Goi-Bunpou 40 - Dokkai 40 - Choukai 30
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item future-plan">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2030</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">
+								Ra trường với tấm bằng Xuất sắc cùng nhiều thành tích tiêu biểu
+							</h4>
+							<p class="timeline-desc">
+								- Đạt GPA trên 3.7 mỗi kỳ<br>
+								- Thực tập tại trung tâm tiếng Anh để tích lũy kinh nghiệm giảng dạy<br>
+								- Chủ động tìm kiếm các công việc gia sư môn tiếng Anh với nhiều mục đích và đối tượng học sinh khác nhau<br>
+								- Tích cực tham gia các cuộc thi, hoạt động phát triển và nâng cao kỹ năng tiếng Anh
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item future-plan">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2033</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">
+								Tìm được công việc trợ giảng / giáo viên 
+							</h4>
+							<p class="timeline-desc">
+								Dự kiến ở những năm đầu ra trường, em sẽ tìm được công việc trợ giảng / giáo viên ở các trung tâm IELTS / luyện thi vào chuyên. Lý tưởng nhất thì em có thể tìm được công việc giáo viên tiếng Anh ở một trường công lập top ở Hải Phòng. Mục tiêu là tích lũy kinh nghiệm và kiến thức để phục vụ cho các mục tiêu sau này
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item future-plan">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2034</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">
+								Mở trung tâm quy mô nhỏ ở nhà
+							</h4>
+							<p class="timeline-desc">
+								Với cơ sở vật chất có sắn, em dự định sau khi tích lũy đủ kinh nghiệm thì sẽ mở trung tâm để nâng cao thu nhập và mở rộng danh tiếng.
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item future-plan">
+						<div class="timeline-dot"></div>
+						<div class="timeline-date">Năm 2036</div>
+						<div class="timeline-content">
+							<h4 class="timeline-title">
+								Thi tuyển giáo viên trường Chuyên
+							</h4>
+							<p class="timeline-desc">
+								Với cơ sở vật chất có sắn, em dự định sau khi tích lũy đủ kinh nghiệm thì sẽ mở trung tâm để nâng cao thu nhập và mở rộng danh tiếng.
+							</p>
+						</div>
+					</div>
+
+					</div>
+			</div>
+		</section>
+
+		<!-- END -->
+
+		<footer class="site-footer">
+			<div class="footer-container">
+				<div class="footer-left">
+					<h3 class="footer-title">Kết nối với tôi</h3>
+					<div class="social-grid">
+						<a
+							href="https://www.facebook.com/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/facebook.svg"
+								alt="Facebook"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=FB'
+								"
+							/>
+							<span class="social-name">Facebook</span>
+							<span class="social-username">Long Bùi</span>
+						</a>
+
+						<a
+							href="https://www.instagram.com/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/instagram.svg"
+								alt="Instagram"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=IG'
+								"
+							/>
+							<span class="social-name">Instagram</span>
+							<span class="social-username">@longbui1810</span>
+						</a>
+
+						<a
+							href="https://www.threads.net/@longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/threads.svg"
+								alt="Threads"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=TH'
+								"
+							/>
+							<span class="social-name">Threads</span>
+							<span class="social-username">@longbui1810</span>
+						</a>
+
+						<a
+							href="https://www.youtube.com/@copperII_"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/youtube.svg"
+								alt="Youtube"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=YT'
+								"
+							/>
+							<span class="social-name">Youtube</span>
+							<span class="social-username">@copperII_</span>
+						</a>
+
+						<a
+							href="https://github.com/Copper2"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/github.svg"
+								alt="Github"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=GH'
+								"
+							/>
+							<span class="social-name">Github</span>
+							<span class="social-username">Copper2</span>
+						</a>
+
+						<a
+							href="https://www.linkedin.com/in/longbui1810"
+							class="social-item"
+							target="_blank"
+						>
+							<img
+								src="../assets/logo/social-media/linkedin.svg"
+								alt="LinkedIn"
+								class="icon"
+								onerror="
+									this.src =
+										'https://placehold.co/20x20?text=IN'
+								"
+							/>
+							<span class="social-name">LinkedIn</span>
+							<span class="social-username">Long Bùi</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="footer-right">
+					<h3 class="footer-title">Thông tin sinh viên</h3>
+					<ul class="info-list">
+						<li class="info-item">
+							<span class="info-label">Trường:</span>
+							<span class="info-value"
+								>Trường Đại học Ngoại ngữ - ĐHQGHN
+								(ULIS-VNU)</span
+							>
+						</li>
+						<li class="info-item">
+							<span class="info-label">Ngành học:</span>
+							<span class="info-value">Sư phạm Anh</span>
+						</li>
+						<li class="info-item">
+							<span class="info-label">MSSV:</span>
+							<span class="info-value">25040135</span>
+						</li>
+						<li class="info-item">
+							<span class="info-label">Email:</span>
+							<span class="info-value"
+								><a
+									href="minhlong18102007@gmail.com"
+									class="info-email-link"
+									>minhlong18102007@gmail.com</a
+								></span
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2026 Bùi Minh Long. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="js/global.js"></script>
+	<script src="js/index.js"></script>
+</html>

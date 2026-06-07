@@ -1,0 +1,34 @@
+.md-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+/* Định vị phần tử con đầu tiên (STT, Icon hoặc Ký hiệu đầu dòng) */
+.md-item > *:first-child {
+  flex: 0 0 50px;
+  width: 150px;
+  max-width: 150px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Phần nội dung text còn lại tự động tràn hết không gian */
+.md-item > *:last-child {
+  flex: 1;
+}
+
+.md-references {
+  display: block;
+}
+
+.md-h3 {
+  margin-bottom: 1rem;
+}
+
+.md-p-content {
+  margin-top: 1rem;
+}

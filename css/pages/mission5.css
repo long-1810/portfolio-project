@@ -1,0 +1,24 @@
+#strength-weaknesses td {
+  text-align: justify;
+  line-height: 2;
+}
+
+#strength-weaknesses td:first-child {
+  text-align: center;
+}
+
+#overall-assessment td:first-child,
+#overall-assessment th:first-child {
+	width: 20%;
+}
+
+#overall-assessment td,
+#overall-assessment th {
+  width: 40%;
+}
+
+.md-chat-scroll {
+  overflow-x: scroll;
+  display: flex;
+  gap: 1.5rem
+}

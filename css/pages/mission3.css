@@ -1,0 +1,5 @@
+.md-table--prj3-2 td:first-child,
+.md-table--prj3-2 th:first-child {
+	width: 150px;
+	color: var(--primary-color);
+}
