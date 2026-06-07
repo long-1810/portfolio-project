@@ -5,8 +5,8 @@
 		"desc": "Thực hành quản lý tệp và thư mục trên Windows: tạo, đổi tên, sao chép, di chuyển, xóa, khôi phục dữ liệu bằng File Explorer; ghi lại quá trình bằng ảnh chụp màn hình từng bước.",
 		"submit-time": "2026-02-27",
 		"tag": "Tin học cơ bản",
-		"image": "/assets/thumbnails/img1.jpg",
-		"link": "/pages/projects/project1.html"
+		"image": "../assets/thumbnails/img1.jpg",
+		"link": "projects/project1.html"
 	},
 	{
 		"id": 2,
@@ -14,8 +14,8 @@
 		"desc": "Tìm kiếm và đánh giá độ tin cậy của tối thiểu 10 tài liệu tham khảo về một chủ đề chuyên ngành từ nhiều nguồn học thuật, lập bảng tổng hợp và trình bày báo cáo theo chuẩn Harvard.",
 		"submit-time": "2026-03-21",
 		"tag": "Tin học cơ bản",
-		"image": "/assets/thumbnails/img2.jpg",
-		"link": "/pages/projects/project2.html"
+		"image": "../assets/thumbnails/img2.jpg",
+		"link": "projects/project2.html"
 	},
 	{
 		"id": 3,
@@ -23,8 +23,8 @@
 		"desc": "Thiết kế, thử nghiệm và so sánh các mức độ prompt cho ba tác vụ học tập, phân tích hiệu quả của từng cách viết và rút ra nguyên tắc prompt engineering thực tiễn.",
 		"submit-time": "2026-05-04",
 		"tag": "AI, Prompt Engineering",
-		"image": "/assets/thumbnails/img3.jpg",
-		"link": "/pages/projects/project3.html"
+		"image": "../assets/thumbnails/img3.jpg",
+		"link": "projects/project3.html"
 	},
 	{
 		"id": 4,
@@ -32,8 +32,8 @@
 		"desc": "Thực hiện dự án nhóm trong 1 tuần, sử dụng tối thiểu 3 công cụ hợp tác trực tuyến và ghi lại minh chứng về quản lý nhiệm vụ, đóng góp nội dung, giao tiếp và lưu trữ tệp cá nhân.",
 		"submit-time": "2026-06-07",
 		"tag": "Làm việc nhóm",
-		"image": "/assets/thumbnails/img4.jpg",
-		"link": "/pages/projects/project4.html"
+		"image": "../assets/thumbnails/img4.jpg",
+		"link": "projects/project4.html"
 	},
 	{
 		"id": 5,
@@ -41,8 +41,8 @@
 		"desc": "Tìm hiểu vai trò của AI trong giáo dục ngoại ngữ, xây dựng nội dung, hình ảnh minh họa và thiết kế slide hoàn chỉnh thông qua việc tích hợp các công cụ AI tạo sinh phổ biến hiện nay.",
 		"submit-time": "2026-06-07",
 		"tag": "AI, Sáng tạo nội dung",
-		"image": "/assets/thumbnails/img5.jpg",
-		"link": "/pages/projects/project5.html"
+		"image": "../assets/thumbnails/img5.jpg",
+		"link": "projects/project5.html"
 	},
 	{
 		"id": 6,
@@ -50,7 +50,7 @@
 		"desc": "Xây dựng bộ nguyên tắc và tư duy đạo đức khi dùng AI...",
 		"submit-time": "3 giờ",
 		"tag": "AI, Đạo đức",
-		"image": "/assets/thumbnails/img6.jpg",
-		"link": "/pages/projects/project6.html"
+		"image": "../assets/thumbnails/img6.jpg",
+		"link": "projects/project6.html"
 	}
 ]
