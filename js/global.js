@@ -1,35 +1,23 @@
-// const BASE =
-//   window.location.hostname === "localhost"
-//     ? "/"
-//     : "/portfolio-project/";
+const lightbox = document.getElementById("lightbox");
+const preview = document.getElementById("lightbox-img");
 
+document.querySelectorAll(".media-card img")
+.forEach(img => {
+	img.addEventListener("click", () => {
+		preview.src = img.src;
 
+		lightbox.classList.add("active");
+	});
+});
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const themeToggleBtn = document.getElementById("theme-toggle-btn");
-//     const themeIconImg = document.getElementById("theme-icon-img");
-//     const body = document.body;
+lightbox.addEventListener("click", () => {
+	lightbox.classList.remove("active");
 
-//     const iconDarkTheme = `${BASE}assets/logo/moon.svg`;
-//     const iconLightTheme = `${BASE}assets/logo/sun.svg`;
+	preview.src = "";
+});
 
-//     const savedTheme = localStorage.getItem("theme");
-//     if (savedTheme === "light") {
-//         body.classList.add("light-mode");
-//         themeIconImg.src = iconLightTheme;
-//     } else {
-//         themeIconImg.src = iconDarkTheme;
-//     }
-
-//     themeToggleBtn.addEventListener("click", () => {
-//         body.classList.toggle("light-mode");
-        
-//         if (body.classList.contains("light-mode")) {
-//             themeIconImg.src = iconLightTheme;
-//             localStorage.setItem("theme", "light");
-//         } else {
-//             themeIconImg.src = iconDarkTheme;
-//             localStorage.setItem("theme", "dark");
-//         }
-//     });
-// });
+document.addEventListener("keydown", (e) => {
+	if (e.key === "Escape") {
+		lightbox.classList.remove("active");
+	}
+});
