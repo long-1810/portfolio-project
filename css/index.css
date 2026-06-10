@@ -324,4 +324,8 @@
     .skills-achievements-grid {
         grid-template-columns: 1fr; /* Thu về 1 cột dọc trên Mobile */
     }
+    .about-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
