@@ -46,9 +46,9 @@
 	},
 	{
 		"id": 6,
-		"title": "Nhiệm vụ 6: AI có trách nhiệm",
-		"desc": "Xây dựng bộ nguyên tắc và tư duy đạo đức khi dùng AI...",
-		"submit-time": "3 giờ",
+		"title": "Nhiệm vụ 6: Sử dụng AI có trách nhiệm",
+		"desc": " Nghiên cứu cách sử dụng AI trong quá trình tổng hợp thông tin học thuật (synthesis) từ các bài báo ESL (English as a Second Language), kết hợp nhiều công cụ AI như Perplexity, NotebookLM và ChatGPT để hỗ trợ tìm kiếm, lọc, phân tích và viết học thuật.",
+		"submit-time": "2026-06-16",
 		"tag": "AI, Đạo đức",
 		"image": "../assets/thumbnails/img6.jpg",
 		"link": "projects/project6.html"
